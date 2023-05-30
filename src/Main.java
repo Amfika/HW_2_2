@@ -12,7 +12,7 @@ public class Main {
         while (true){
             System.out.print("Please enter something:");
             str = scanner.nextLine();
-                if (str.equals("Exit")||str.equals("exit")){
+                if (str.equalsIgnoreCase("Exit")){
                     System.out.println("Bye!");
                     break;
                 }

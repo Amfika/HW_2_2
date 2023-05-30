@@ -9,11 +9,9 @@ public class Main3 {
         while(true) {
             System.out.print("Попадите в загаданный диапазон. Введите число: ");
             int score = new Scanner(System.in).nextInt();
-            if (score > 100) {
+            if ((score > 100) || (score < 0)) {
                 System.out.println("Введено некорректное значение. Попробуйте снова!");
-            } else if (score < 0){
-                System.out.println("Введено некорректное значение. Попробуйте снова!");
-            }else{
+            }else {
                 System.out.println("Получилось!");
                 break;
             }
